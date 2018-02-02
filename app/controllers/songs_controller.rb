@@ -21,10 +21,6 @@ class SongsController < ApplicationController
     end
   end
 
-  def genre_name
-    @song = Song.genre_name
-  end
-
   def edit
     @song = Song.find(params[:id])
   end
